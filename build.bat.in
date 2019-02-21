@@ -1,0 +1,6 @@
+@echo off
+
+mkdir .build
+pushd .build
+cmake -G "Visual Studio 15 2017 Win64" "-DBoost_INCLUDE_DIR=/path/to/boost/" "-DBoost_LIBRARY_DIR=/path/to/boost/libs/" ..
+popd
